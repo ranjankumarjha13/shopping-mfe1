@@ -5,16 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-products',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <div>
-      <h1>Shopping Microfrontend</h1>
-
-      <div *ngFor="let product of products">
-        <h3>{{ product.name }}</h3>
-        <p>Price: ₹{{ product.price }}</p>
-      </div>
-    </div>
-  `
+  templateUrl: './products.component.html',
 })
 export class ProductsComponent {
 

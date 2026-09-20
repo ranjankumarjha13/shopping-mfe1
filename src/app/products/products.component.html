@@ -1,1 +1,8 @@
-<p>products works!</p>
+<div>
+    <h1>Shopping Microfrontend runnig in 4201</h1>
+
+    <div *ngFor="let product of products">
+        <h3>{{ product.name }}</h3>
+        <p>Price: ₹{{ product.price }}</p>
+    </div>
+</div>
