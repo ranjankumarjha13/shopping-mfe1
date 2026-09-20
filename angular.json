@@ -35,8 +35,8 @@
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "shopping-mfe:build"
+          "options": {
+            "buildTarget": "shopping-mfe:build"
 					}
 				},
 				"test": {
@@ -107,11 +107,11 @@
 				"serve-original": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-						"production": {
-							"browserTarget": "shopping-mfe:build:production"
+            "production": {
+              "buildTarget": "shopping-mfe:build:production"
 						},
-						"development": {
-							"browserTarget": "shopping-mfe:build:development"
+            "development": {
+              "buildTarget": "shopping-mfe:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
