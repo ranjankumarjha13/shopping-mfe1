@@ -1,9 +1,10 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-products',
     imports: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     templateUrl: './products.component.html'
 })
 export class ProductsComponent {
